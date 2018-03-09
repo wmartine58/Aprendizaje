@@ -21,5 +21,5 @@ var winState = {
 	// The retart function calls the menu state
 	restart: function() {
 		game.state.start('menu');
-	},
-}
+	}
+};

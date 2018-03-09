@@ -1,6 +1,6 @@
 
 //Here we use the 'official name' (bootstate) when defining the state
-var bootstate = {
+var bootState = {
 
 	// The create function is a standard Phaser funcion, and is
 	// automatically called
@@ -12,5 +12,6 @@ var bootstate = {
 
 		// Calling the load state
 		game.state.start('load');
+		console.log("empezan a bootear");
 	}
 };

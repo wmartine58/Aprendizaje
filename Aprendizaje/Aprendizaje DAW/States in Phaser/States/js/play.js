@@ -1,4 +1,4 @@
-	
+var playState = {	
 
 	create: function() {
 
@@ -47,3 +47,4 @@
 		//We start the win state
 		game.state.start('win');
 	}
+};

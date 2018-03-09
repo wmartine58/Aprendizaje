@@ -25,5 +25,5 @@ var menuState = {
 	// The start function calls the plays state
 	start: function() {
 		game.state.start('play');
-	},
+	}
 };

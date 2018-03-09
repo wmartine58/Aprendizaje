@@ -19,5 +19,6 @@ var loadstate = {
 	create: function() {
 		// Call the menu state
 		game.state.start('menu');
+		console.log("empezar");
 	}
 };
