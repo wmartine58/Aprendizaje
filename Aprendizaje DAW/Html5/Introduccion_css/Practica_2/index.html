@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	
+	<style>
+
+		#principal{
+			width: 500px;
+			/*background-color: #293BA4;*/
+			text-align: center;
+			margin: 15px auto;
+			padding: 15px;
+			border: 3px solid #F00; 
+			border-radius: 15px;
+			box-shadow: #999 5px 5px 5px;
+			/*background: -moz-linear-gradient(bottom, #00F 10%, #3FF 90%);*/     /*Navegador Firefox*/
+			background: -webkit-radial-gradient(center, ellipse, #F00, #CF0);  /*Navegador Crome*/
+			background: -ms-linear-gradient(bottom, #00F, #3FF);              /*Navegador I. Explorer*/
+			background: -o-linear-gradient(bottom, #00F, #3FF);               /*Navegador Opera*/
+			/*outline: 2px dashed #00F;
+			outline-offset: 15px;*/
+			/*-webkit-transform: scale(1, -1);*/
+			/*-webkit-transform: skew(30deg);*/
+			-webkit-transition: -webkit-transform 1s ease 0.5s;
+		}
+		
+		#principal:hover{					/*Hover: Cuando ponga el raton sobre el elemento*/
+			-webkit-transform: rotate(5deg);
+		}
+		
+		@font-face{
+			font-family: 'mifuente';
+			src: url(bauhaus.ttf);
+		}
+		
+		#titulo{
+			font: bold 36px 'mifuente';
+			text-shadow: #0F0 3px 3px 5px;
+			color: rgba(0, 0, 0, 0.9);
+		}
+
+	</style>
+	
+</head>
+
+<body>
+	
+	<header id="principal">
+		<span id="titulo">Estilos CSS3</span>
+	</header>
+	
+</body>
+</html>
