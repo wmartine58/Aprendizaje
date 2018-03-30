@@ -3,8 +3,23 @@
 <head>
 <meta charset="utf-8">
 <title>Documento sin título</title>
+<script>
+
+function hermosura() {
+	alert("Clara Alcázar López de la Franca");
+}
+	
+function ejecutar() = {
+	var i = document.getElementById("i");
+	i.onclick=hermosura();
+}
+	
+window.onload = ejecutar();
+	
+</script>
 </head>
 
 <body>
+<p><img id="i" src="Imagenes/Clara Alcázar López de la Franca.png" onMouseOver="hermosura();"></p>
 </body>
 </html>
