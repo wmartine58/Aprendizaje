@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+<style>
+	table {
+		text-align: center;
+		background-color:#BC2225;
+		width: 25%;
+		margin: auto;
+		border: 2px #3669A7 dashed;	
+			
+	}
+	
+	td {
+		padding: 15px;
+	}
+</style>
+<script>
+	
+	function comenzar(){
+		var nombre = document.getElementById("nombre");
+		var apellido = document.getElementById("apellido");
+		nombre.addEventListener("input", validar, false);
+		apellido.addEventListener("input", validar, false);
+		validar();
+		
+	}
+	
+	function validar() {
+		if (nombre.value=="" && apellido.value=="") {
+			nombre.setCustomValidity("Introduce nombre o apellido");
+			nombre.style.background="FFDDD";
+			apellido.setCustomValidity("Introduce nombre o apellido");
+			apellido.style.background="FFDDD";
+		}else {
+			nombre.setCustomValidity("");
+			nombre.style.background="FFFFF";
+			apellido.style.background="FFFFF";
+		}
+	}
+
+	window.addEventListener("load", comenzar, false);
+</script>
+<body>
+<section>
+		<form name="registro_usuario" method="get">
+			<table>
+				<tr>
+					<td>Nombre:</td>
+					<td><input type="text" name="nombre" id="nombre"></td>
+				</tr>
+				<tr>
+					<td>Apellido:</td>
+					<td><input type="text" name="apellido" id="apellido"></td>
+				</tr>	
+				<tr>
+					<td>Edad:</td>
+					<td><input type="number" name="edad" id="edad" min="1" max="100"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" id="Enviar" value="Registrar"></td>
+				</tr>
+				
+			</table>
+		</form>	
+	</section>
+
+</body>
+</html>
