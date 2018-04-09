@@ -26,3 +26,13 @@ a.addEvenListener("mouseover", funcion_que_se_dispara(), false");
 /*Métodos del objeto video*/
 /*play*/
 /*paused*/
+
+/*Propiedades de validacion*/
+/*valueMissing*/
+/*patternMismatch*/
+/*tooLong*/
+/*rangeUnderflow*/
+/*rangeOverflow*/
+/*stepMismatch*/
+/*customError*/
+/*setCustomValidity*/
